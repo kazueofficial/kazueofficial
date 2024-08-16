@@ -1,0 +1,33 @@
+#create a class named queue
+class Queue:
+    #define a method to queue and make the instance for self
+    def __init__(self):
+        #make the self into empty queue
+        self.queue = list()
+
+     # create a define function named addtoq then add the dataval
+    def addtoq(self, dataval):
+     
+        if dataval not in self.queue:
+            #it will add using insert and make the cound into 0 with the daval(bc dataval has the value(
+            self.queue.insert(0, dataval)
+            #if dataval is not on queue return true
+            return True
+        #if is in queue return false
+        return False
+
+    #create a defined function namdd size eith the instance of self
+    def size(self):
+        #the return to len so the value became a number
+        return len(self.queue)
+
+
+#new variable for queue
+TheQueue = Queue()
+#add the mon,tues,wed to queue
+TheQueue.addtoq("Mon")
+TheQueue.addtoq("Tue")
+TheQueue.addtoq("Wed")
+
+print(TheQueue.size())
+print (TheQueue.queue)
