@@ -1,0 +1,33 @@
+#import the collection module
+import collections
+
+# Create a deque with initial elements "Mon", "Tue", "Wed"
+DoubleEnded = collections.deque(["Mon","Tue","Wed"])
+
+# Append "Thu" to the right end of the deque
+DoubleEnded.append("Thu")
+
+# Print a message and the deque
+print("Appended at right - ")
+print(DoubleEnded)
+
+# Append "Sun" to the left end of the deque
+DoubleEnded.appendleft("Sun")
+
+# Print a message and the deque
+print("Appended at right at left is - ")
+print(DoubleEnded)
+
+# Remove an element from the right end of the deque``
+DoubleEnded.pop()
+
+# Print a message and the deque
+print("Deleting from right - ")
+print(DoubleEnded)
+
+# Remove an element from the left end of the deque
+DoubleEnded.popleft()
+
+# Print a message and the deque
+print("Deleting from left - ")
+print(DoubleEnded)
