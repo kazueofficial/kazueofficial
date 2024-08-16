@@ -1,0 +1,14 @@
+#create an array of integers with size
+arr= [0] *10
+
+#add a value to array 
+for i in range (10):
+    arr[i] = i +1
+
+#access the 5 index and output
+print ("value,index 5:", arr[5])
+
+#printing out all the values inside the array
+print ("all the value in the array:")
+for  value in arr:
+    print (value)
